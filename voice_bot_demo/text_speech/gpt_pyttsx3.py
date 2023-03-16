@@ -1,12 +1,12 @@
-import threading
-from voice_bot_demo.text_speech.interface import TextSpeechInterface
-
 import queue
-import openai
 import subprocess
+import threading
 
-from voice_bot_demo.utils import file_relative_path
+import openai
+
 from voice_bot_demo.console import console
+from voice_bot_demo.text_speech.interface import TextSpeechInterface
+from voice_bot_demo.utils import file_relative_path
 
 
 class GPT_PYTTSX3TextSpeech(TextSpeechInterface):

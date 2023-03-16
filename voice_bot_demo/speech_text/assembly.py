@@ -1,15 +1,14 @@
-import os
 import asyncio
 import base64
 import json
+import os
 import re
-import pyaudio
 
+import pyaudio
 import websockets
 
-from voice_bot_demo.speech_text.interface import SpeechTextInterface
 from voice_bot_demo.console import console
-
+from voice_bot_demo.speech_text.interface import SpeechTextInterface
 
 FRAMES_PER_BUFFER = 3200
 FORMAT = pyaudio.paInt16
@@ -78,7 +77,7 @@ class AssemblySpeechText(SpeechTextInterface):
                             )
                     except websockets.exceptions.ConnectionClosedError:
                         break
-                    except Exception as e:
+                    except Exception:
                         pass
 
             _send_result, _receive_result = await asyncio.gather(send(), receive())

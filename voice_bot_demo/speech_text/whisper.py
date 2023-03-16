@@ -1,9 +1,10 @@
+import os.path
+import re
 import subprocess
 import threading
-import re
-import os.path
-from voice_bot_demo.speech_text.interface import SpeechTextInterface
+
 from voice_bot_demo.console import console
+from voice_bot_demo.speech_text.interface import SpeechTextInterface
 
 
 class WhisperSpeechText(SpeechTextInterface):
@@ -46,15 +47,6 @@ class WhisperSpeechText(SpeechTextInterface):
         thread.join()
 
     def setup_whisper(self):
-        whisper_setup_instructions = """Whisper is not set up. Please follow these steps to set it up:
-
-1. Download the repo at https://github.com/ggerganov/whisper.cpp
-2. Run `bash ./models/download-ggml-model.sh base.en`
-3. Run `make stream`
-
-Then the command to run is `./stream -m ./models/ggml-base.en.bin -t 8 --step 500 --length 5000`. 
-"""
-
         if not os.path.exists("./stream"):
             console.print(
                 "[bold yellow]Whisper is not set up on this system.[/bold yellow]"
