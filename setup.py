@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-VERSION = "0.1"
+VERSION = "0.2"
 
 
 def get_long_description():
@@ -13,7 +13,7 @@ def get_long_description():
 
 
 setup(
-    name="voice-bot",
+    name="voice-bot-demo",
     description="AI conversational bot",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
