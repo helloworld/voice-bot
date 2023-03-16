@@ -18,18 +18,18 @@ setup(
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Sashank Thupukari",
-    url="https://github.com/helloworld/voice-bot",
+    url="https://github.com/helloworld/voice-bot-demo",
     project_urls={
-        "Issues": "https://github.com/helloworld/voice-bot/issues",
-        "CI": "https://github.com/helloworld/voice-bot/actions",
-        "Changelog": "https://github.com/helloworld/voice-bot/releases",
+        "Issues": "https://github.com/helloworld/voice-bot-demo/issues",
+        "CI": "https://github.com/helloworld/voice-bot-demo/actions",
+        "Changelog": "https://github.com/helloworld/voice-bot-demo/releases",
     },
     license="Apache License, Version 2.0",
     version=VERSION,
     packages=find_packages(),
     entry_points="""
         [console_scripts]
-        voice-bot=voice_bot.cli:cli
+        voice-bot-demo=voice_bot_demo.cli:cli
     """,
     install_requires=["click", "rich", "pyaudio", "websockets", "openai", "pyttsx3"],
     extras_require={

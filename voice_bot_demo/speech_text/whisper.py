@@ -2,8 +2,8 @@ import subprocess
 import threading
 import re
 import os.path
-from voice_bot.speech_text.interface import SpeechTextInterface
-from voice_bot.console import console
+from voice_bot_demo.speech_text.interface import SpeechTextInterface
+from voice_bot_demo.console import console
 
 
 class WhisperSpeechText(SpeechTextInterface):

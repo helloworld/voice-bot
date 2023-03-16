@@ -1,6 +1,6 @@
 from click.testing import CliRunner
 
-from voice_bot.cli import cli
+from voice_bot_demo.cli import cli
 
 
 def test_version():

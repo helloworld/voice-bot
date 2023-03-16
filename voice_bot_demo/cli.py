@@ -4,11 +4,11 @@ import pyaudio
 from rich.prompt import Prompt
 from rich.table import Table
 
-from voice_bot.speech_text.assembly import AssemblySpeechText
-from voice_bot.speech_text.whisper import WhisperSpeechText
+from voice_bot_demo.speech_text.assembly import AssemblySpeechText
+from voice_bot_demo.speech_text.whisper import WhisperSpeechText
 
-from voice_bot.text_speech.gpt_pyttsx3 import GPT_PYTTSX3TextSpeech
-from voice_bot.console import console
+from voice_bot_demo.text_speech.gpt_pyttsx3 import GPT_PYTTSX3TextSpeech
+from voice_bot_demo.console import console
 
 
 def get_input_devices(p):

@@ -1,9 +1,9 @@
-# voice-bot
+# voice-bot-demo
 
-[![PyPI](https://img.shields.io/pypi/v/voice-bot.svg)](https://pypi.org/project/voice-bot/)
-[![Changelog](https://img.shields.io/github/v/release/helloworld/voice-bot?include_prereleases&label=changelog)](https://github.com/helloworld/voice-bot/releases)
-[![Tests](https://github.com/helloworld/voice-bot/workflows/Test/badge.svg)](https://github.com/helloworld/voice-bot/actions?query=workflow%3ATest)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/helloworld/voice-bot/blob/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/voice-bot-demo.svg)](https://pypi.org/project/voice-bot-demo/)
+[![Changelog](https://img.shields.io/github/v/release/helloworld/voice-bot-demo?include_prereleases&label=changelog)](https://github.com/helloworld/voice-bot-demo/releases)
+[![Tests](https://github.com/helloworld/voice-bot-demo/workflows/Test/badge.svg)](https://github.com/helloworld/voice-bot-demo/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/helloworld/voice-bot-demo/blob/master/LICENSE)
 
 AI conversational bot
 
@@ -11,30 +11,30 @@ AI conversational bot
 
 Install this tool using `pip`:
 
-    pip install voice-bot
+    pip install voice-bot-demo
 
 ## Usage
 
 For help, run:
 
-    voice-bot --help
+    voice-bot-demo --help
 
 You can also use:
 
-    python -m voice_bot --help
+    python -m voice_bot_demo --help
 
 For now, only the [Assembly AI](https://www.assemblyai.com/) speech-to-text model works fully. To run:
 
 ```
 export ASSEMBLYAI_API_SECRET=YOUR_KEY_HERE
-voice-bot start --speech-text-model assembly
+voice-bot-demo start --speech-text-model assembly
 ```
 
 ## Development
 
 To contribute to this tool, first checkout the code. Then create a new virtual environment:
 
-    cd voice-bot
+    cd voice-bot-demo
     python -m venv venv
     source venv/bin/activate
 

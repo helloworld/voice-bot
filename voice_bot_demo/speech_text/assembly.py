@@ -7,8 +7,8 @@ import pyaudio
 
 import websockets
 
-from voice_bot.speech_text.interface import SpeechTextInterface
-from voice_bot.console import console
+from voice_bot_demo.speech_text.interface import SpeechTextInterface
+from voice_bot_demo.console import console
 
 
 FRAMES_PER_BUFFER = 3200
