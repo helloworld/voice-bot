@@ -23,6 +23,13 @@ You can also use:
 
     python -m voice_bot --help
 
+For now, only the [Assembly AI](https://www.assemblyai.com/) speech-to-text model works fully. To run:
+
+```
+export ASSEMBLYAI_API_SECRET=YOUR_KEY_HERE
+voice-bot start --speech-text-model assembly
+```
+
 ## Development
 
 To contribute to this tool, first checkout the code. Then create a new virtual environment:
