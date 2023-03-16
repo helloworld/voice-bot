@@ -4,8 +4,8 @@ import pyaudio
 from rich.prompt import Prompt
 from rich.table import Table
 
-# from voice_bot.speech_text.assembly import AssemblySpeechText
-# from voice_bot.speech_text.whisper import WhisperSpeechText
+from voice_bot.speech_text.assembly import AssemblySpeechText
+from voice_bot.speech_text.whisper import WhisperSpeechText
 
 from voice_bot.text_speech.gpt_pyttsx3 import GPT_PYTTSX3TextSpeech
 from voice_bot.console import console
@@ -86,7 +86,7 @@ def start(device: str, speech_text_model: str):
 
     console.print("[bold blue]Started. You may not start speaking.[/bold blue]")
 
-    text_speech = None
+    text_speech = GPT_PYTTSX3TextSpeech()
     if speech_text_model.lower() == "assembly":
         speech_text = AssemblySpeechText(
             chosen_device["index"], process_sentence=text_speech.process_sentence
