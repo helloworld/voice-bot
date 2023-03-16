@@ -1,6 +1,5 @@
 import os
-
-from setuptools import setup
+from setuptools import setup, find_packages
 
 VERSION = "0.1"
 
@@ -27,7 +26,7 @@ setup(
     },
     license="Apache License, Version 2.0",
     version=VERSION,
-    packages=["voice_bot"],
+    packages=find_packages(),
     entry_points="""
         [console_scripts]
         voice-bot=voice_bot.cli:cli
